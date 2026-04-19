@@ -1,0 +1,69 @@
+ import { FetchService, removeService, FetchServiceOne, addService } from "../../../utilities/fetchCall"
+ import { MdTitle,MdDescription } from "react-icons/md"
+ import ServiceTemplate from "../../utilities/ServiceTemplate";
+
+ const backend = import.meta.env.VITE_BACKEND
+    // to open or close the form
+    const [isFormOpen, setFormOpen] = useState(false)
+    // for add data from input tag
+    const [ServiceData, setServiceData] = useState({ title: '', description: '' })
+        const field = [
+        { name: 'title', type: 'text', Icon: MdTitle },
+        { name: 'description', type: 'text', Icon: MdDescription }
+    ]
+    // for display added data
+    const [FetchServices, setFetchServices] = useState([])
+    // for modifying 
+    const [isModify, setModify] = useState()
+    // handle input change
+    const onChange = (e) => {
+        const { name, value } = e.target
+        setServiceData((prev) => ({ ...prev, [name]: value }))
+        console.log(ServiceData)
+    }
+    // fetch all card 
+    const fetchAllServiceCard = async () => {
+        FetchService(`${backend}/service/fetch`, setFetchServices)
+    }
+    useEffect(() => {
+        fetchAllServiceCard()
+        console.log(FetchServices)
+    }, [])
+
+
+    const add = () => {
+        setFormOpen(true)
+        setServiceData({ title: '', description: '' })
+    }
+    const modify = async (id) => {
+        setModify(id)
+        await FetchServiceOne(`${backend}/service/fetchOne`, id, setServiceData)
+        setFormOpen(true)
+    }
+    const remove = async (id) => {
+        await removeService(`${backend}/service/remove`, id)
+        fetchAllServiceCard()
+    }
+
+    // on submit for add or modfying data
+    const submit = async (e) => {
+        e.preventDefault()
+        await addService(`${backend}/service`, isModify, setModify, ServiceData)
+        setFormOpen(false)
+        fetchAllServiceCard()
+    }
+
+    {isFormOpen && <ServiceTemplate setFormOpen={setFormOpen} field={field} onChange={onChange} onSubmit={submit} data={ServiceData} />}
+
+  <div className="absolute right-0">
+                <Btn color='green' text="add" onClick={add} />
+            </div>
+
+            
+                            <div className="flex justify-between">
+                                <Btn color='red' text="delete" onClick={() => remove(e._id)} />
+                                <Btn color='orange' text="modify" onClick={() => modify(e._id)} />
+                            </div>
+
+
+
