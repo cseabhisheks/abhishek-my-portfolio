@@ -38,7 +38,7 @@ export default function LeftMenu() {
         <div className=" flex items-center justify-center h-[35%] ">
           <NavLink to='/'>
             <div className="flex flex-col items-center gap-2">
-              <img className="w-[100px] h-[100px] rounded-[100%] object-cover object-top " src="https://st.depositphotos.com/1011643/4430/i/950/depositphotos_44309759-stock-photo-young-indian-man-outdoors.jpg" alt="" />
+              <img className="w-[100px] h-[100px] rounded-[100%] object-cover object-top  " src="pic.jpeg" alt="" />
               <h1 className="text-lg font-semibold">abhishek singh</h1>
               <div className="text-[#cacace] ">
                 <p>mern developer</p>
@@ -96,7 +96,7 @@ export default function LeftMenu() {
           <hr className="bg-gray-100 w-full h-[1px] my-5" />
 
           {/* language progress bar */}
-          <div className="flex flex-col gap-5">
+          {/* <div className="flex flex-col gap-5">
 
             <div >
               <div className="flex  justify-between">
@@ -138,7 +138,7 @@ export default function LeftMenu() {
               </div>
             </div>
 
-          </div>
+          </div> */}
 
           <hr className="bg-gray-100 w-full h-[1px] my-5" />
 
@@ -163,7 +163,7 @@ export default function LeftMenu() {
           {/* download cv button */}
           <div>
             <button className="flex gap-2 capitalize  w-full items-center" type="button">
-              <a href="srs.pdf" download="srs.pdf" >download cv</a>
+              <a href="Abhishek_Singh_MERN_Developer_GENAI_Resume.pdf" download="Abhishek_Singh_MERN_Developer_GENAI_Resume" >download cv</a>
               <FaDownload className="text-xs" />
             </button>
           </div>

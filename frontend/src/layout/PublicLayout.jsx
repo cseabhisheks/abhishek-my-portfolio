@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom"
 
 export default function PublicLayout() {
     return (<>
-        <div className="flex justify-between bg-dark">
+        <div className="flex justify-between bg-dark overscroll-contain border-2 border-black">
             <LeftMenu />
             <div className="flex-1 overflow-scroll  ">
 
