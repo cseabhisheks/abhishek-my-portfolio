@@ -1,6 +1,3 @@
-#demo link
-https://cseabhisheks.vercel.app/
-
 # 🚀 MERN Stack Developer Portfolio
 
 A modern, fully responsive **Developer Portfolio** built with the **MERN Stack**. The portfolio includes a dedicated **Admin Panel** that allows content to be managed dynamically without editing the frontend code.
@@ -54,14 +51,7 @@ Images are securely uploaded and managed using **Cloudinary**, allowing media fi
 
 ## 📸 Live Demo
 
-🔗 **Portfolio:** `<your-live-demo-link>`
-
-## 📬 Contact
-
-Feel free to connect with me!
-
-* GitHub: `<your-github-link>`
-* LinkedIn: `<your-linkedin-link>`
+🔗 **Portfolio:** `https://cseabhisheks.vercel.app/`
 
 ---
 
