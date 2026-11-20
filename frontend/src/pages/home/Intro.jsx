@@ -22,7 +22,7 @@ export default function Intro() {
                     <div className="bg-accent w-fit px-4 py-2 md:px-8 md:py-4 capitalize ">explore now</div>
                 </div>
                 <div className=" hidden lg:flex justify-center items-center ">
-                    <img src="https://arter.bslthemes.com/wp-content/uploads/2020/09/face-2.png" alt="" className="" />
+                    <img src="https://www.guvi.in/blog/wp-content/uploads/2024/05/1-1.webp" alt="" className="rounded-3xl" />
                 </div>
             </div>
 
@@ -37,8 +37,6 @@ export default function Intro() {
                         </div>
                     ))
                 }
-
-
             </div>
         </div>
     </>)

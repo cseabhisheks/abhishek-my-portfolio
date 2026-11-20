@@ -139,7 +139,15 @@ export default function LeftMenu() {
             </div>
 
           </div> */}
+          <hr className="bg-gray-100 w-full h-[1px] my-5" />
 
+          {/* download cv button */}
+          <div>
+            <button className="flex gap-2 capitalize  w-full items-center" type="button">
+              <a href="Abhishek_Singh_MERN_Developer_GENAI_Resume.pdf" download="Abhishek_Singh_MERN_Developer_GENAI_Resume" >download cv</a>
+              <FaDownload className="text-xs" />
+            </button>
+          </div>
           <hr className="bg-gray-100 w-full h-[1px] my-5" />
 
           {/* check list */}
@@ -160,26 +168,16 @@ export default function LeftMenu() {
 
           <hr className="bg-gray-100 w-full h-[1px] my-5" />
 
-          {/* download cv button */}
-          <div>
-            <button className="flex gap-2 capitalize  w-full items-center" type="button">
-              <a href="Abhishek_Singh_MERN_Developer_GENAI_Resume.pdf" download="Abhishek_Singh_MERN_Developer_GENAI_Resume" >download cv</a>
-              <FaDownload className="text-xs" />
-            </button>
-          </div>
-
-          <hr className="bg-gray-100 w-full h-[1px] my-5" />
-
 
         </div>
 
         {/* social media link */}
         <div className=" h-[5%] flex items-center">
           <ul className="flex justify-center gap-5  w-full  ">
-            <li><a href=""><FaGithub /></a></li>
-            <li><a href=""><FaSquareXTwitter /></a></li>
-            <li><a href=""><FaSquareInstagram /></a></li>
-            <li><a href=""><FaLinkedin /></a></li>
+            <li><a href="https://github.com/cseabhisheks" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
+            <li><a href="https://x.com/cseabhisheks" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter /></a></li>
+            <li><a href="https://www.instagram.com/cseabhisheks/" target="_blank" rel="noopener noreferrer"><FaSquareInstagram /></a></li>
+            <li><a href="https://www.linkedin.com/in/cseabhisheks/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
           </ul>
         </div>
 

@@ -27,15 +27,15 @@ export default function Information() {
                 <div className=" flex flex-col gap-2 bg-card p-5">
                     <div className="flex justify-between">
                         <span className="font-semibold">Email</span>
-                        <span className="text-[#cacace]">devmagnets.mail@gmail.com</span>
+                        <span className="text-[#cacace]">singhabhishek.engineer@gmail.com</span>
                     </div>
                     <div className="flex justify-between ">
                         <span className="font-semibold">Instagram</span>
-                        <span className="text-[#cacace]">@devMagnets</span>
+                        <span className="text-[#cacace]">@cseabhisheks</span>
                     </div>
                     <div className="flex justify-between">
                         <span className="font-semibold">Facsebook</span>
-                        <span className="text-[#cacace]">@devMagnets</span>
+                        <span className="text-[#cacace]">@cseabhisheks</span>
                     </div>
                 </div>
 

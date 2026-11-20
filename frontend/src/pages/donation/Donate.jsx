@@ -65,7 +65,7 @@ export default function Donate() {
                 <span className="flex items-center gap-2 italic text-xs">
                     You're about to Donate
                     <div className="flex items-center gap-2 bg-green-500/80 px-2 py-1 rounded-xl italic w-fit"><TbCoinRupeeFilled className="text-xl" />{Form.amount} </div>
-                    INR to devMagnets!
+                    INR to cseabhisheks!
                 </span>
 
                 {/* submit button */}

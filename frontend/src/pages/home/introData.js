@@ -1,7 +1,8 @@
-    const stats = [
-        { value: "10+", label: "years experience" },
-        { value: "143", label: "completed projects" },
-        { value: "114", label: "happy customers" },
-        { value: "20+", label: "honors and awards" }
-    ];
-    export default stats;
+const stats = [
+    { value: "3+", label: "projects built" },
+    { value: "9+", label: "academic CGPA" },
+    { value: "MERN", label: "full-stack development" },
+    { value: "2027", label: "graduation year" }
+];
+
+export default stats;
